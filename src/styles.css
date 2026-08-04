@@ -19,6 +19,13 @@
  */
 
 @theme inline {
+  --font-display: "Libre Franklin", system-ui, sans-serif;
+  --font-body: "Mulish", system-ui, sans-serif;
+  --color-band: var(--band);
+  --color-band-foreground: var(--band-foreground);
+  --color-band-accent: var(--band-accent);
+  --color-band-muted: var(--band-muted);
+  --color-band-subtle: var(--band-subtle);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -63,8 +70,14 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  /* Mailhub brand */
+  --band: oklch(0.256 0.008 67.5); /* Carbon Black #282520 */
+  --band-foreground: oklch(0.963 0.001 106.4); /* White Smoke #F4F4F2 */
+  --band-accent: oklch(0.699 0.132 269.5); /* Cornflower Blue #768FEC */
+  --band-muted: oklch(0.963 0.001 106.4 / 72%);
+  --band-subtle: oklch(0.963 0.001 106.4 / 45%);
+  --background: oklch(0.963 0.001 106.4);
+  --foreground: oklch(0.256 0.008 67.5);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
