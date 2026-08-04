@@ -15,7 +15,7 @@ export function NumbersBand({ stats, className = "" }: NumbersBandProps) {
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-6 text-center sm:grid-cols-2 sm:gap-12 lg:grid-cols-4">
         {stats.map((stat) => (
           <div key={stat.label} className="flex flex-col items-center gap-2">
-            <span className="font-display text-[2.25rem] font-bold leading-tight tracking-tight text-band-accent sm:text-[2.75rem]">
+            <span className="font-display whitespace-nowrap text-[1.75rem] font-bold leading-tight tracking-tight text-band-accent sm:text-[2.25rem] lg:text-[2.75rem]">
               {stat.value}
             </span>
             <span className="font-body text-sm text-band-muted">{stat.label}</span>
