@@ -26,7 +26,7 @@ const homepageStats: NumbersBandStat[] = [
   { value: "4", label: "Carriers" },
   { value: "9", label: "Integrations" },
   { value: "1 API call", label: "All carriers" },
-  { value: "MCP-ready", label: "AI agents" },
+  { value: "MCP", label: "AI agents" },
 ];
 
 function Index() {
